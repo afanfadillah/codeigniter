@@ -8,6 +8,10 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+    public function dashboard(): string
+    {
+        return view('home');
+    }
     public function saya($umur, $nama)
     {
         echo "nama saya ".$nama. ", umur saya ".$umur;
